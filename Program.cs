@@ -10,6 +10,7 @@ namespace Exercises
 1) Divider
 2) Sum all numbes
 3) strong!
+4) Gues Random
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -26,6 +27,10 @@ Enter to exit:");
                 case "3":
                     var solution3 = new Solution3();
                     Console.WriteLine(solution3.strong());
+                    break;
+                case "4":
+                    var solution4 = new Solution4();
+                    Console.WriteLine(solution4.guesNumber());
                     break;
             }
         }
