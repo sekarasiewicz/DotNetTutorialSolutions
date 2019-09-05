@@ -9,7 +9,7 @@ namespace Exercises
             Console.Write(@"Chose solution: 
 1) Divider
 2) Sum all numbes
-
+3) strong!
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -22,6 +22,10 @@ Enter to exit:");
                 case "2":
                     var solution2 = new Solution2();
                     Console.WriteLine(solution2.sumValues());
+                    break;
+                case "3":
+                    var solution3 = new Solution3();
+                    Console.WriteLine(solution3.strong());
                     break;
             }
         }
