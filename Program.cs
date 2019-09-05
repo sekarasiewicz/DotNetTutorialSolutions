@@ -11,6 +11,7 @@ namespace Exercises
 2) Sum all numbes
 3) strong!
 4) Gues Random
+5) Max number
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -31,6 +32,10 @@ Enter to exit:");
                 case "4":
                     var solution4 = new Solution4();
                     Console.WriteLine(solution4.guesNumber());
+                    break;
+                case "5":
+                    var solution5 = new Solution5();
+                    Console.WriteLine(solution5.maxNumber());
                     break;
             }
         }
