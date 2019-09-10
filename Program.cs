@@ -12,6 +12,8 @@ namespace Exercises
 3) strong!
 4) Gues Random
 5) Max number
+6) Revert String
+7) Sorted unique list
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -36,6 +38,14 @@ Enter to exit:");
                 case "5":
                     var solution5 = new Solution5();
                     Console.WriteLine(solution5.maxNumber());
+                    break;
+                case "6":
+                    var solution6 = new Solution6();
+                    Console.WriteLine(solution6.revertString());
+                    break;
+                case "7":
+                    var solution7 = new Solution7();
+                    Console.WriteLine(solution7.distinctList());
                     break;
             }
         }
