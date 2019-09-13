@@ -9,16 +9,15 @@ namespace Exercises
         public string distinctList()
         {
             Console.WriteLine("Write numbers to the list, those numbers i will make unique and sort :), Quit to Exit");
-            List<int> myList = new List<int>();
+            var myList = new List<int>();
 
             while (true)
             {
                 var rl = Console.ReadLine();
 
-                int rlp;
-                var isNumeric = int.TryParse(rl, out rlp);
+                var isNumeric = int.TryParse(rl, out var rlp);
 
-                if (rl.ToLower() == "quit")
+                if (rl != null && rl.ToLower() == "quit")
                 {
                     break;
                 } else if (!isNumeric)
@@ -31,7 +30,7 @@ namespace Exercises
             var dList = myList.Distinct().ToList();
             dList.Sort();
 
-            return String.Join(", ", dList);
+            return string.Join(", ", dList);
         }
     }
 }

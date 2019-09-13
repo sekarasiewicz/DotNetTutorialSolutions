@@ -10,10 +10,11 @@ namespace Exercises
 1) Divider
 2) Sum all numbes
 3) strong!
-4) Gues Random
+4) guest Random
 5) Max number
 6) Revert String
 7) Sorted unique list
+8) Check hour
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -46,6 +47,10 @@ Enter to exit:");
                 case "7":
                     var solution7 = new Solution7();
                     Console.WriteLine(solution7.distinctList());
+                    break;
+                case "8":
+                    var solution8= new Solution8();
+                    Console.WriteLine(solution8.checkHour());
                     break;
             }
         }
