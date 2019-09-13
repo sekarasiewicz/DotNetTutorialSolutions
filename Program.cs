@@ -16,6 +16,7 @@ namespace Exercises
 7) Sorted unique list
 8) Check hour
 9) CamelCase
+10) Count Vowels
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -56,6 +57,10 @@ Enter to exit:");
                 case "9":
                     var solution9 = new Solution9();
                     Console.WriteLine(solution9.CamelCase());
+                    break;
+                case "10":
+                    var solution10 = new Solution10();
+                    Console.WriteLine(solution10.CountVowels());
                     break;
             }
         }
