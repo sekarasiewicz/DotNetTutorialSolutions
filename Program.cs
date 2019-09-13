@@ -15,6 +15,7 @@ namespace Exercises
 6) Revert String
 7) Sorted unique list
 8) Check hour
+9) CamelCase
 Enter to exit:");
             var s = Console.ReadLine();
 
@@ -49,8 +50,12 @@ Enter to exit:");
                     Console.WriteLine(solution7.distinctList());
                     break;
                 case "8":
-                    var solution8= new Solution8();
+                    var solution8 = new Solution8();
                     Console.WriteLine(solution8.checkHour());
+                    break;
+                case "9":
+                    var solution9 = new Solution9();
+                    Console.WriteLine(solution9.CamelCase());
                     break;
             }
         }
